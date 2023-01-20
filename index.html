@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <p id="mostra" class="mostra"></p>
+    </section>
+    <input type="button" class="tecla" id="limpar" value="C" onclick="document.getElementById('mostra').innerHTML ='';conta=[''];">
+    <input type="button" class="tecla" id="parenteses" value="()" onclick="Parenteses();">
+    <input type="button" class="tecla" id="porcentagem" value="%" onclick="Porcentagem();">
+    <input type="button" class="tecla" id="dividir" value="/" onclick="op='/';Operacao();">
+    <br>
+    <input type="button" class="tecla" value="7" onclick="n='7';Numero();">
+    <input type="button" class="tecla" value="8" onclick="n='8';Numero();">
+    <input type="button" class="tecla" value="9" onclick="n='9';Numero();">
+    <input type="button" class="tecla" id="vezes" value="x" onclick="op='x';Operacao();">
+    <br>
+    <input type="button" class="tecla" value="4" onclick="n='4';Numero();">
+    <input type="button" class="tecla" value="5" onclick="n='5';Numero();">
+    <input type="button" class="tecla" value="6" onclick="n='6';Numero();">
+    <input type="button" class="tecla" id="menos" value="-" onclick="op='-';Operacao();">
+    <br>
+    <input type="button" class="tecla" value="1" onclick="n='1';Numero();">
+    <input type="button" class="tecla" value="2" onclick="n='2';Numero();">
+    <input type="button" class="tecla" value="3" onclick="n='3';Numero();">
+    <input type="button" class="tecla" id="mais" value="+" onclick="op='+';Operacao();">
+    <br>
+    <input type="button" class="tecla" value="." onclick="n='.';Numero();">
+    <input type="button" class="tecla" value="0" onclick="n='0';Numero();">
+    <input type="button" class="tecla" value="+/-" onclick="Negativo();">
+    <input type="button" class="tecla" id="igual" value="=" onclick="Calcula();">
+    <script src="Calculadora.js"></script>
+</body>
+</html>
